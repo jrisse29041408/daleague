@@ -15,7 +15,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@project-daleague/ui": ["libs/ui/src/index.ts"],
+      "@project-daleague/shared/fixed-menu": [
+        "libs/shared/fixed-menu/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
