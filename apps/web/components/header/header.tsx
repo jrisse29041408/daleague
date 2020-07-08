@@ -5,7 +5,7 @@ import { LoginButton } from './loginButton/loginButton';
 export const Header = () => {
   return (
     <div>
-      <Menu fixed="top" inverted>
+      <Menu fixed="top">
         <Container>
           <a href="/">
             <Menu.Item header>Da League</Menu.Item>
@@ -20,7 +20,7 @@ export const Header = () => {
             <Menu.Item>Contant us</Menu.Item>
           </a>
           {/* TODO: add auth logic if !user exists then the button routes to /signup */}
-          <Menu.Item postition="right">
+          <Menu.Item position="right">
             <LoginButton />
           </Menu.Item>
         </Container>
