@@ -6,6 +6,7 @@ import 'semantic-ui-css/semantic.min.css';
 export const App = ({ Component, pageProps }) => {
   return (
     <ApolloProvider client={client}>
+      {console.log(client)}
       <Component {...pageProps} />
     </ApolloProvider>
   );

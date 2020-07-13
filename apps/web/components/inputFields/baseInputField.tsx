@@ -7,16 +7,10 @@ interface baseInputFieldProps {
   label: string;
 }
 
-export const BaseInputField = ({ placeHolder, label }: baseInputFieldProps) => {
-  const {
-    meta: { error, isTouched },
-    getInputProps,
-  } = useField(label);
-
+export const BaseInputField = ({ placeHolder }: baseInputFieldProps) => {
   return (
     <div>
-      <Input fluid placeholder={placeHolder} text="text" {...getInputProps()} />{' '}
-      {isTouched && error ? <em>{error}</em> : null}
+      <Input fluid placeholder={placeHolder} text="text" />
     </div>
   );
 };

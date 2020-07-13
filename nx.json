@@ -40,6 +40,9 @@
     },
     "shared-fixed-menu": {
       "tags": []
+    },
+    "api": {
+      "tags": []
     }
   }
 }

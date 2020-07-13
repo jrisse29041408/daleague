@@ -1,0 +1,124 @@
+Project Da League
+Author: Jack Risse
+Team Members: Steve Osborn
+Date: 05/26/20
+
+Overview:
+    Da League, yes the name is a working progress, is a website--future mobile
+    app--for fantasy football that is tailored to the sports gambler. The idea
+    of the website is that you won't have to handle collecting money each
+    member of a league. Also I am not sure if this part is where I monetize the
+    site. A subscription like 4.99 a month for machine/deep learning analytics
+    on each player and draft assistant(just an idea I don't know if I am going
+    to do this or maybe it could be a future thing if becomes a thing) that you
+    can chat with.
+
+Version Control:
+    - git
+
+Tech Stack:
+    - Typescript
+    - Nextjs/React
+    - Postgres
+        - sequalize (ORM)
+    - GraphQL/Restful
+        - not sure yet
+    - Stripe (Payments)
+    - Python
+    - Flask
+    - TensorFlow
+    - Scikit-Learn
+
+Servers:
+    - apollo express server
+    - postgres server
+    - python server for machine learning analytics
+    - frontend server
+    - python server chatbot
+
+Architecture:
+    - the api for the chatbot and machine learning analytics would be most
+      likely a restful api
+        - assuming that using graphql with python would be a huge learning
+          curve
+
+Colors:
+    Dark Liver
+        4E4E55
+    Roman Silver
+        808089
+    Upsdell Red
+        BA1229
+    Middle Blue
+        7CDAF4
+    White
+        FFFFFF
+
+Production:
+    - docker
+        - containers
+
+Host:
+    - netlify/aws
+        - not sure yet
+
+Data Demands:
+    - Player info
+    - Player stats
+    - Live player game stat
+    - Machine learning analysis
+
+Concerns:
+    - cost of the data requirements for a fantasy football website
+    - Haven't gotten the grasp of graphql yet
+
+Features:
+    - Signing Up
+        - Google, Facebook, Twitter  OAuth
+        - Free to sign up
+
+    - Creating a league
+        - Choose between a free league or a betters league
+            - if betters league choose the entry fee
+        - Configure the league's and draft's settings
+
+    - Ways of joining a league
+        - Send a text, email or snapchat maybe
+        - Searching the league
+            - leageue name
+            - commisioner
+
+    - The bag
+        - all of the money from each player
+        - need a way to securely store the money till someone wins
+
+    - GMs Office (page)
+        - platfrom for a user can look at graphs and tables
+        - will contain machine/deep learning insights
+
+    - Draft assistant (possibly naming the bot to Al)
+        - before draft will send the user articles written by football
+          analyst, mock drafts predicted by machine or deep learning
+        - during the draft it will give suggested pick by machine/deep learning
+
+File Structure:
+    project-da-league/
+        app/
+            pages/
+                404.js
+                About.js
+                Contacts.js
+                Home.js
+                Legal.js
+                Privacy/
+                    PrivacyPolicy.js
+                    CookiePolicy.js
+                    TermsNConditions.js
+                SiteMap.js
+
+        backend/
+            api/
+
+Draft Agent:
+    - generative model
+    -

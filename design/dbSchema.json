@@ -1,0 +1,104 @@
+{
+    "User": {
+        "columns": {
+            "_id": {
+                "type": "string",
+                "description": "The id from the OAuth account used to sign up."
+            },
+            "dateWhenCreated": {
+                "type": "date",
+                "description": "The date when user was created."
+            },
+            "email": {
+                "type": "string",
+                "description": "The email address from the OAuth account used to sign up."
+            },
+            "emailVerified": {
+                "type": "string",
+                "description" : "The verified email address from the OAuth account used to sign up."
+            },
+            "phoneNumber": {
+                "type": "string",
+                "description" : "The phone number from the OAuth account used to sign up."
+            },
+            "Leagues": {
+                "type": "[League]",
+                "description": "A list of the names of the league or leagues the user is associated with.",
+                "relationship": "OneToMany"
+            }
+        }
+    },
+
+    "League": {
+        "columns": {
+            "league_id": {
+                "type": "string",
+                "description": "An primary key for a league."
+            },
+            "name": {
+                "type": "string",
+                "description": "Given name of the league by commissioner."
+            },
+            "commissioner": {
+                "type": "user_id",
+                "description": "The creator of the league."
+            },
+            "dateWhenCreated": {
+                "type": "date",
+                "description":"The date when league was created."
+            },
+            "password": {
+                "type": "string",
+                "description": "The password to authorize the user to join the league."
+            },
+            "numOfTeams": {
+                "type": "integer",
+                "description": "The number of teams in the league."
+            },
+            "teams": {
+                "type": "[Team]",
+                "description": "A list of the names of the teams in the league.",
+                "relationship": ""
+            },
+            "isHotLeague": {
+                "type": "boolean",
+                "description": "True, if the league is pay to play. False, if the league is for fun no money."
+            },
+            "entryFeeAmount": {
+                "type": "float",
+                "description": "The amount of money to join the league."
+            }
+        }
+    },
+
+    "Team": {
+        "columns":{
+            "team_id": {
+                "type": "string",
+                "description": "The primary key for a team."
+            },
+            "generalManager": {
+                "type": "string",
+                "description": "The name of the user."
+            },
+            "name": {
+                "type": "string",
+                "description": "The name of the team."
+            },
+            "dateWhenCreated": {
+                "type": "date",
+                "description": "The date when the team was created."
+            },
+            "roster": {
+                "type": "[Player]",
+                "description": "A list of players objects that are currently on the roster.",
+                "relationship": ""
+            },
+            "players": {
+                "type": "[Player]",
+                "description": "A list of players on the team.",
+                "relationship": ""
+            }
+        }
+    }
+}
