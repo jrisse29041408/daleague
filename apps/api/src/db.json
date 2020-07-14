@@ -1,0 +1,73 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "bob",
+      "email": "bob@bob.com",
+      "password": "bob",
+      "teamIds": [
+        "2"
+      ],
+      "leagueIds": [
+        "4"
+      ]
+    },
+    {
+      "id": "4",
+      "username": "tim",
+      "email": "tim@tim.com",
+      "password": "tim",
+      "teamIds": [
+        "3"
+      ],
+      "leagueIds": [
+        "4"
+      ]
+    },
+    {
+      "id": "5",
+      "username": "joe",
+      "email": "joe@joe.com",
+      "password": "joe",
+      "teamIds": [
+        "8"
+      ],
+      "leagueIds": [
+        "4"
+      ]
+    },
+    {
+      "username": "ali",
+      "email": "ali@ali.com",
+      "password": "$2a$12$TOp/pKOmgVRjGhgzOQjKsOrqg0496fqST2mF5flFfXoCi7SWsBC7S",
+      "id": "FwlqgFy"
+    }
+  ],
+  "teams": [
+    {
+      "id": "3",
+      "teamName": "teamName",
+      "gmId": "4",
+      "leagueId": "4"
+    },
+    {
+      "id": "2",
+      "teamName": "teamName",
+      "gmId": "1",
+      "leagueId": "4"
+    },
+    {
+      "id": "8",
+      "teamName": "teamName",
+      "gmId": "5",
+      "leagueId": "4"
+    }
+  ],
+  "leagues": [
+    {
+      "id": "4",
+      "leagueName": "leagueName",
+      "commisionerId": "1"
+    }
+  ]
+}
