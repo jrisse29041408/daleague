@@ -6,7 +6,7 @@ import 'reflect-metadata';
 import * as express from 'express';
 import { ApolloServer } from 'apollo-server-express';
 import { buildSchema } from 'type-graphql';
-import UserResolver from './resolvers/UserResolver';
+import UserResolver from '../resolvers/UserResolver';
 // import { schema } from './util/buildSchema';
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const startServer = async () => {

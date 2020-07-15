@@ -1,0 +1,18 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "jack",
+  "password": "Jr29041408",
+  "database": "daleague",
+  "synchronize": true,
+  "logging": true,
+  "entities": ["app/entity/**/*.ts"],
+  "migrations": ["app/migration/**/*.ts"],
+  "subscribers": ["app/subscriber/**/*.ts"],
+  "cli": {
+    "entitiesDir": "app/entity",
+    "migrationsDir": "app/migration",
+    "subscribersDir": "app/subscriber"
+  }
+}

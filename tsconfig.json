@@ -19,7 +19,8 @@
       "@project-daleague/ui": ["libs/ui/src/index.ts"],
       "@project-daleague/shared/fixed-menu": [
         "libs/shared/fixed-menu/src/index.ts"
-      ]
+      ],
+      "@project-daleague/data-access": ["libs/data-access/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
