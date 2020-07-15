@@ -27,4 +27,22 @@ export default class UserResolver {
       })
       .then((res) => res.data);
   }
+
+  // @Mutation(() => Boolean)
+  // async login(
+  //   @Arg('email') email: string,
+  //   @Arg('password') password: string
+  // ): Promise<boolean> {
+  //   // check if email exists
+
+  //   // get password input value
+
+  //   // compare the input password to the password from input email
+
+  //   // if password is invalid return false
+
+  //   // if password is valid return true
+
+  //   return false;
+  // }
 }

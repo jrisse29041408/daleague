@@ -8,6 +8,9 @@ export default class League {
   @Field()
   leagueName: string;
 
+  @Field()
+  leaguePassword: string;
+
   @Field(() => ID)
   creatorId: string;
 }

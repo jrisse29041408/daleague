@@ -41,6 +41,12 @@
       "email": "ali@ali.com",
       "password": "$2a$12$TOp/pKOmgVRjGhgzOQjKsOrqg0496fqST2mF5flFfXoCi7SWsBC7S",
       "id": "FwlqgFy"
+    },
+    {
+      "username": "ben",
+      "email": "ben@ben.com",
+      "password": "$2a$12$02uslSgKduaCh0aJkRuYq.8JL8AximScsu7piXwUTb/OPY9VNk8c6",
+      "id": "vAwxvo3"
     }
   ],
   "teams": [
